@@ -9,7 +9,6 @@ import React from 'react'
               style={{width: "200px"}}/>
            </div>
           <h5 className='textLogo'style={{paddingTop: "25px", paddingBottom: "25px", alignContent:"center" }}>Training project laboratory 2022/23</h5>
-          {/* kostil'*/}
         </div>
       </div>
     );

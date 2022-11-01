@@ -1,19 +1,15 @@
 .carousel-item{
-    height: 40rem;
-    background: #777;
-    color: white;
-    position:relative;
-    background-position: center;
-    background-size: cover;
+  height: 40rem;
+  background: #777;
+  color: white;
+  position:relative;
+  background-position: center;
+  background-size: cover;
 
-  }
-  .event-container{
+}
+.event-container{
   height: 400px;
   width: 800px;
-  position: absolute;
-  top:100px;
-  left:450px;
-  right:0;
-  padding-bottom: 50px;
   background-color: #1c1c1c;
-  }
+  margin: 75px auto 0;
+}
