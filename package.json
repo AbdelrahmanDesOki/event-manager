@@ -1,22 +1,22 @@
 {
-  "name": "event-manager",
+  "name": "event-details-trial",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "express": "^4.18.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "axios": "^1.1.3",
+    "google-maps-react": "^2.0.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-router-dom": "^6.4.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
+    "rsuite": "^5.21.0",
     "styled-components": "^5.3.6",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^3.0.4"
   },
   "scripts": {
-    "devstart": " nodemon server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,21 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "Sports Event Management is a web application that facilitates the process of finding and organizing different kinds of sports events. Organizers create events and other people can choose to participate in these events or attend them as audience depending on the type of the event (that way the website can be used for both large scale professional sports events and for small local meetups). For each event the organizers provide the date, price, location and other details of their events. Organizers will be able to manage people who are following their events. E.g., view who are registered and confirm their registration (which also can be done automatically if they prefer that), sending messages to inform them about the change in schedule and make posts to provide updates about the preparation or how the event is going and to post some information after the end of the event like pictures of the participants. Visitors and athletes can follow the event, buy tickets for it and provide feedback about the activities and organizers after attending the event. Thus, each organizer will have a rating obtained by the reviews of the participants. Each even page will include all the details about it and about the organizers as well as the posts and tickets buying options.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AbdelrahmanDesOki/event-manager.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AbdelrahmanDesOki/event-manager/issues"
-  },
-  "homepage": "https://github.com/AbdelrahmanDesOki/event-manager#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.20"
   }
 }
