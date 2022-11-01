@@ -5,4 +5,4 @@ app.get('/api', (req, res) => {
     res.send("Hello from server");
 });
 
-app.listen(7000);
+app.listen(8000);

@@ -10,7 +10,7 @@ import axios from 'axios';
 function App() {
   const fetchapi = async () => {
     try {
-      const res = await axios.get('http://localhost:7000/api');
+      const res = await axios.get('http://localhost:8000/api');
       console.log(res.data);
     } catch (error) {
       console.log(error.message);
