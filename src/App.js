@@ -26,7 +26,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/auth" element={<Auth />} />
-          <Route path="/nav" element={<Navbar />} />
         </Routes>
       </div>
     </BrowserRouter>
