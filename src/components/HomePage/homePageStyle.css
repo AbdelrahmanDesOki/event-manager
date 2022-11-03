@@ -1,0 +1,12 @@
+.news , .eventlist {
+    height: 500px;
+    width: 100%;
+}
+
+.news {
+    background-color: red;
+}
+
+.eventlist{
+    background-color: blue;
+}
