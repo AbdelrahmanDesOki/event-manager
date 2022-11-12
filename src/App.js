@@ -3,7 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Auth from "./Components/Login/Auth"
+import Mainpage from "./Components/Carousel/Carousel"
 import Navbar from "./Components/Navbar/indexNav";
+
 import axios from 'axios';
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
       <div>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Mainpage />} />
           <Route path="/auth" element={<Auth />} />
         </Routes>
       </div>
