@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Auth from "./Components/Login/Auth"
 import Navbar from "./Components/Navbar/indexNav";
 import Carousel from "./Components/Carousel/Carousel"
+import Payment from "./Components/paymentPage/paymentUi"
 import HomePage from "./Components/HomePage/HomePage";
 import axios from 'axios';
 import News from "./Components/HomePage/News";
@@ -31,6 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage/>} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/pay" element={<Payment />} />
         </Routes>
         
       </div>
