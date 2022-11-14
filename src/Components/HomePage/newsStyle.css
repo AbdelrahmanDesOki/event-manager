@@ -1,20 +1,21 @@
+
 .bold {
     font-weight: 700;
 }
-
-.font-size-lg {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 1.3;
+a{
+    text-decoration: none;
+    color:#fff;
+    background-color: transparent;
 }
-
-.col-xs-6 {
-    width: 50%;
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
 }
-.news {
-    min-height: 375px;
-}
-.margin-bottom-xs-16 {
-    margin-bottom: 16px!important;
-    margin-bottom: 1.06666667rem!important;
+h2{
+    margin-bottom:1rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
 }

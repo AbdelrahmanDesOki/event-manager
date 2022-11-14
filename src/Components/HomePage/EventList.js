@@ -1,7 +1,7 @@
 
 const EventList = () => {
     return(
-        'Event List'
+        <h2>EVENTS</h2>
     )
 }
 export default EventList

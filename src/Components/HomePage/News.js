@@ -1,44 +1,73 @@
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import './newsStyle.css'
-
-const News = () => {
+function News() {
   return (
-    <div>
-      <h2>NEWS</h2>
-      <div class="row">
-        <div class="col-xs-6 news margin-bottom-xs-16">
-          <a href="">
-            <img src="./dummy_picture.png" alt></img>
-          </a>
-          <p class="font-size-lg bold">
-            <a href="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-            </a>
-          </p>
-        </div>
-        
-        <div class="col-xs-6 news margin-bottom-xs-16">
-          <a href="">
-            <img src="./dummy_picture.png" alt></img>
-          </a>
-          <p class="font-size-lg bold">
-            <a href="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="col-xs-6 news margin-bottom-xs-16">
-          <a href="">
-            <img src="./dummy_picture.png" alt></img>
-          </a>
-          <p class="font-size-lg bold">
-            <a href="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-            </a>
-          </p>
-        </div>
+    <Container>
+      <h2>News</h2>
+      <Row>
+        <Col>
+          <Card border="light" style={{margin:"30px 20px 10px 20px"}}>
+              <Card.Img variant="top" src="./city_photos/budapest_photo2.jpg" />
+               <Card.Body style={{backgroundColor: "#1c1c1c"}}>
+                  <Card.Text>
+                    <a class ="bold" href="#">
+                      Veniam ullamco cupidatat aliquip incididunt duis commodo fugiat ex culpa exercitation.
+                    </a>
+                  </Card.Text>
+              </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card border="light" style={{margin:"30px 20px 10px 20px"}}>
+              <Card.Img variant="top" src="./dummy_picture.png" />
+                <Card.Body style={{backgroundColor: "#1c1c1c"}}>
+                   <Card.Text>
+                    <a class ="bold" href="#">
+                      Some quick example text to build on the card title and make up the
+                      bulk of the card's content.
+                      Some quick example text to build on the card title and make up the
+                      bulk of the card's content.
+                    </a>
+                </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
 
-    </div>
+      <Row>
+        <Col>
+          <Card border="light" style={{margin:"30px 20px 10px 20px"}}>
+              <Card.Img variant="top" src="./city_photos/paris_photo.jpg" />
+               <Card.Body style={{backgroundColor: "#1c1c1c"}}>
+                  <Card.Text>
+                    <a class ="bold" href="#">
+                      Veniam ullamco cupidatat aliquip incididunt duis commodo fugiat ex culpa exercitation.
+                    </a>
+                  </Card.Text>
+              </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card border="light" style={{margin:"30px 20px 10px 20px"}}>
+              <Card.Img variant="top" src="./dummy_picture.png" />
+                <Card.Body style={{backgroundColor: "#1c1c1c"}}>
+                   <Card.Text>
+                    <a class ="bold" href="#">
+                    Eniam ullamco cupidatat aliquip incididunt duis commodo fugiat ex culpa exercitation.
+                    </a>
+                </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+      <Button href="#" variant="outline-light" style={{marginTop:"20px"}}>All News</Button>
+    </Container>
+    
   );
-};
+}
+
 export default News;
