@@ -1,5 +1,4 @@
 import React from 'react'
-import Auth from '../Login/Auth';
 import { Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn } from './NavbarElements'
 const Navbar = () => {
   return (

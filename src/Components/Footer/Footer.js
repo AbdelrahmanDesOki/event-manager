@@ -2,31 +2,36 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
+    < >
       <div
-        className="custom_footer"
-        style={{ backgroundColor: "#1c1c1c", width: "100%" }}
+        style={{ backgroundColor: "#1c1c1c"}}
       >
-        <div className="logo">
+        <div>
           <img
             src="./city_photos/bme_logo_kicsi_color.png"
             alt="BME-Logo"
-            style={{ width: "200px" }}
+            style={{ 
+              width: "200px",
+              textAlign: "center",
+              display: "block",
+              margin:"auto",
+             
+            }}
           />
         </div>
-        <h5
-          className="textLogo"
-          style={{
-            paddingTop: "25px",
-            paddingBottom: "25px",
-            alignContent: "center",
-            color: "white",
-          }}
-        >
-          Training project laboratory 2022/23
-        </h5>
+          <h5
+            style={{
+              paddingTop: "25px",
+              paddingBottom: "25px",
+              textAlign: "center",
+              color: "white",
+              
+            }}
+          >
+            Training project laboratory 2022/23
+          </h5>
       </div>
-    </div>
+    </>
   );
 }
 

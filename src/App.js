@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import {Routes, Route, Link } from "react-router-dom"
 import Auth from "./Components/Login/Auth"
 import Navbar from "./Components/Navbar/indexNav";
 import axios from 'axios';
@@ -22,16 +22,15 @@ function App() {
     }, []
   );
   return (
-    <BrowserRouter>
-      <div>
-        <Navbar />
+      <>
+        <header>
+          <Navbar />
+        </header>
         <Routes>
           <Route path="/" element={<MainPage/>} />
           <Route path="/auth" element={<Auth />} />
         </Routes>
-        
-      </div>
-    </BrowserRouter>
+      </>
   )
 }
 

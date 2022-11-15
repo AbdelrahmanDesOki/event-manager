@@ -3,8 +3,8 @@ import './carouselStyle.css'
 
 const Carousel = () => {
   return (
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false"> {/* data-bs-pause="hover" for stopping on mouseOn*/}
-      <div class="carousel-indicators">
+    <div id="myCarousel" class="carousel slide" data-bs-pause="false" data-bs-ride="carousel"> {/* data-bs-pause="hover" for stopping on mouseOn*/}
+      <div class="carousel-indicators" style={{backgroundColor:"unset"}}>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
       </button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2">
