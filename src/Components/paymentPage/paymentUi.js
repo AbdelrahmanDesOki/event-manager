@@ -18,9 +18,6 @@ function App() {
   const [cvc, setCvc] = useState('');
   const [focus, setFocus] = useState('');
 
-  /* useEffect(() => {
-    ref.current.focus();
-  }, []); */
 
   const ref = useRef(null);
 
@@ -58,6 +55,7 @@ function App() {
                 Card number
                 <input 
                   id='cardnumber'
+                  //try with 34-45-56
                   name='number'
                   onChange={(e) => setNumber(e.target.value)}
                   onFocus={(e) => setFocus(e.target.name)}

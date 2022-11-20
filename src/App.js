@@ -9,9 +9,8 @@ import Payment from "./Components/paymentPage/paymentUi"
 import HomePage from "./Components/HomePage/HomePage";
 import axios from 'axios';
 import News from "./Components/HomePage/News";
-
 import MainPage from "./Components/MainPage";
-// import axios from 'axios';
+
 
 function App() {
   const fetchapi = async () => {
