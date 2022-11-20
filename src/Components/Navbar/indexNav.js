@@ -1,6 +1,8 @@
 import React from 'react'
+
 import Auth from '../Login/Auth';
 import Pay from '../paymentPage/paymentUi'
+
 import { Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn } from './NavbarElements'
 const Navbar = () => {
   return (
