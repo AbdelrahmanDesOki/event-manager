@@ -32,6 +32,8 @@ function App() {
     console.log(data);
   };
 
+ 
+
   return (
     <div className='app'>
       <div className='app__window'>
@@ -99,7 +101,10 @@ function App() {
                 </label>
               </div>
               {errors.exampleRequired && <span>This field is required</span>}
-              <button type='submit'>Pay {random} €</button>
+              <a href="/success.html">
+              <button type='submit' name='checkout'>Pay {random} €</button>
+              </a>
+              
             </form>
           </div>
         </div>
