@@ -11,7 +11,7 @@ import axios from 'axios';
 import News from "./Components/HomePage/News";
 
 import MainPage from "./Components/MainPage";
-import axios from 'axios';
+// import axios from 'axios';
 
 function App() {
   const fetchapi = async () => {
