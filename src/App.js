@@ -4,6 +4,7 @@ import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Auth from "./Components/Login/Auth"
 import Navbar from "./Components/Navbar/indexNav";
+import Pay from "./Components/paymentPage/paymentUi"
 import axios from 'axios';
 import MainPage from "./Components/MainPage";
 
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage/>} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/pay" element={<Pay/>} />
         </Routes>
       </>
   )

@@ -38,7 +38,7 @@ function App() {
     <div className='app'>
       <div className='app__window'>
         <div className='app__window-left'>
-          <img src='/background-standing.jpg' className='image' alt='' />
+          <img src='.background-standing.jpg' className='image' alt='' />
           <div className='window__left-card'>
             <Cards
               number={number}
@@ -62,6 +62,7 @@ function App() {
                   onChange={(e) => setNumber(e.target.value)}
                   onFocus={(e) => setFocus(e.target.name)}
                   ref={ref}
+                  pd-4
                 />
               </label>
               <label htmlFor='cardholder'>

@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <React.Fragment>
       <div style={{backgroundColor: "#1c1c1c" }}>
-        <div class="container" style={{paddingTop:"4rem", paddingBottom:"4rem", backgroundColor:"#1c1c1c"}}>
+        <div class="container" style={{paddingTop:"4rem", paddingBottom:"4rem"}}>
           <div class="row">
             <div class="col-sm-8">
               <News/>
