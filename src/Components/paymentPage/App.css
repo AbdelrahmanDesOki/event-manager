@@ -20,6 +20,9 @@
     left: 0px;
     opacity: 0.75;
   }
+  img{
+    background-image: url('./background-standing.jpeg');
+  }
   .app__window {
     position: relative;
     display: grid;

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { useForm } from 'react-hook-form';
-//import payhere from '/success.html';
 import Cards from 'react-credit-cards';
 import 'react-credit-cards/es/styles-compiled.css';
 
@@ -38,7 +37,7 @@ function App() {
     <div className='app'>
       <div className='app__window'>
         <div className='app__window-left'>
-          <img src='.background-standing.jpg' className='image' alt='' />
+          <img src='./background-standing.jpeg' className='image' alt='' />
           <div className='window__left-card'>
             <Cards
               number={number}
@@ -74,7 +73,6 @@ function App() {
                   onChange={(e) => setName(e.target.value)}
                   onFocus={(e) => setFocus(e.target.name)}
                   ref={ref}
-                  
                 />
               </label>
               <div className='window__form-bottom'>
