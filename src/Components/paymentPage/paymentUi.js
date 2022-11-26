@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { useForm } from 'react-hook-form';
-
+//import payhere from '/success.html';
 import Cards from 'react-credit-cards';
 import 'react-credit-cards/es/styles-compiled.css';
 
@@ -51,7 +51,7 @@ function App() {
         </div>
         <div className='app__window-right'>
           <div className='window__right-body'>
-            <form className='window__form' onSubmit={handleSubmit(onSubmit)}>
+            <form className='window__form' onSubmit={handleSubmit(onSubmit)} >
               <h2 className='window__form-title'>Payment details</h2>
               <label htmlFor='cardnumber'>
                 Card number
@@ -62,7 +62,7 @@ function App() {
                   onChange={(e) => setNumber(e.target.value)}
                   onFocus={(e) => setFocus(e.target.name)}
                   ref={ref}
-                  pd-4
+                  pattern="[0-9]{16}"
                 />
               </label>
               <label htmlFor='cardholder'>
@@ -74,6 +74,7 @@ function App() {
                   onChange={(e) => setName(e.target.value)}
                   onFocus={(e) => setFocus(e.target.name)}
                   ref={ref}
+                  
                 />
               </label>
               <div className='window__form-bottom'>
@@ -86,6 +87,7 @@ function App() {
                     onChange={(e) => setExpiry(e.target.value)}
                     onFocus={(e) => setFocus(e.target.name)}
                     ref={ref}
+                     pattern="[0-2]{1}[0-3]{1}[2-9]{2}"
                   />
                 </label>
                 
@@ -98,12 +100,13 @@ function App() {
                     onChange={(e) => setCvc(e.target.value)}
                     onFocus={(e) => setFocus(e.target.name)}
                     ref={ref}
+                    pattern="[0-9]{3}"
                   />
                 </label>
               </div>
               {errors.exampleRequired && <span>This field is required</span>}
-              <a href="/success.html">
-              <button type='submit' name='checkout'>Pay {random} €</button>
+              <a href= "/success.html">
+              <button  type='submit' name='checkout'>Pay {random} €</button>
               </a>
               
             </form>
