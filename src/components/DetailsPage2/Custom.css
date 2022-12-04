@@ -1,0 +1,38 @@
+#mapContainer {
+    width: 500px;
+    height: 500px;
+}
+
+.margin-bottom-xs-16 {
+    margin-bottom: 16px!important;
+    margin-bottom: 1.06666667rem!important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+    background: #1c1c1c;
+    font-size: 100%;
+    color: rgba(231,234,255,.9);
+    line-height: 1.6;
+}
+
+.panel-inverted-container {
+    background: #101112;
+    border-top-right-radius: 7px;
+}
+
+.event-container {
+    height: 400px;
+    width: 800px;
+    background-color: #1c1c1c;
+    margin: 75px auto 0;
+}
+
+Inf{
+    color: rgba(231,234,255,.9);
+}
