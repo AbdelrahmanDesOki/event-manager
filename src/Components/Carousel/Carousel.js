@@ -11,7 +11,7 @@ const Carousel = () => {
   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
   return (
-    <div id="myCarousel" class="carousel slide" data-bs-pause="false" data-bs-ride="carousel"> {/* data-bs-pause="hover" for stopping on mouseOn*/}
+    <div id="myCarousel" class="carousel slide" data-bs-pause="true" data-bs-ride="carousel"> {/* data-bs-pause="hover" for stopping on mouseOn*/}
       <div class="carousel-indicators" style={{backgroundColor:"unset"}}>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
       </button>
