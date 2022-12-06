@@ -33,6 +33,10 @@ body {
     margin: 75px auto 0;
 }
 
-Inf{
+/* Inf{
     color: rgba(231,234,255,.9);
+} */
+
+.list-group-item{
+    background-color: #1c1c1c;
 }

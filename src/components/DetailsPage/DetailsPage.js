@@ -12,11 +12,11 @@ function  DetailsPage(){
         <><>
         <br></br>
         <br></br>
-        <div class="event-container">
+        {/* <div class="event-container">
               <h1>Photo+NameOfEvent(Link)</h1>
               <p>Date,Location of the event</p>
               <p>Countdown till the beginning of the event</p>
-          </div>
+          </div> */}
             <Navbar bg="dark" variant="dark">
                 <Container>
                     <Nav className="me-auto">

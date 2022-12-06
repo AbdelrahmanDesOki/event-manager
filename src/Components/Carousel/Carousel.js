@@ -28,7 +28,7 @@ const Carousel = () => {
                 <img src="./budapest-2018-hero.jpg" alt="event_photo" class="eventImageStyle"></img>
               </div>
               <div style={{display: "flex", flexDirection: "row"}}>
-                  <Link to="#" class="bold"> 
+                  <Link to="" class="bold"> 
                     <h3>ATP Challenger Tour - Hungarian Challenger Open 2022</h3>
                   </Link>
                   <div>
