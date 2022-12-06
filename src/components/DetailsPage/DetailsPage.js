@@ -65,7 +65,7 @@ function  DetailsPage(){
                                 <br></br>
                                 <br></br>
                                 <p id="Loc"><h3 class="panel-title"><span class="icon icon-info"></span> Location</h3></p>
-                                <MapContainer />
+                                {/* <MapContainer /> */}
                                 <br></br>
                                 <br></br>   
                             </div>
