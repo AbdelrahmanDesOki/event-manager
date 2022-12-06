@@ -46,7 +46,7 @@ function News() {
               <Card.Img variant="top" src="./city_photos/paris_photo.jpg" />
                <Card.Body style={{backgroundColor: "#1c1c1c"}}>
                   <Card.Text>
-                    <Link to="#"class="bold">
+                    <Link to="../DetailsPage/DetailsPage.js"class="bold">
                       Veniam ullamco cupidatat aliquip incididunt duis commodo fugiat ex culpa exercitation.
                     </Link>
                   </Card.Text>

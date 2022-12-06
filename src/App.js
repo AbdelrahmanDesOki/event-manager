@@ -4,6 +4,7 @@ import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Auth from "./Components/Login/Auth"
 import Navbar from "./Components/Navbar/indexNav";
+import Elem from "./Components/DetailsPage/DetailsPage"
 import Pay from "./Components/paymentPage/paymentUi"
 import axios from 'axios';
 import MainPage from "./Components/MainPage";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/" element={<MainPage/>} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/pay" element={<Pay/>} />
+          <Route path="/elem" element={<Elem/>} />
         </Routes>
       </>
   )
