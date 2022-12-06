@@ -8,7 +8,7 @@ function Footer() {
       >
         <div>
           <img
-            src="./city_photos/bme_logo_kicsi_color.png"
+            src="./city_photos/bme_logo.jpeg"
             alt="BME-Logo"
             style={{ 
               width: "200px",

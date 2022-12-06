@@ -25,7 +25,7 @@ function News() {
         </Col>
         <Col>
           <Card border="light" style={{margin:"30px 20px 10px 20px"}}>
-              <Card.Img variant="top" src="./dummy_picture.png" />
+              <Card.Img variant="top" src="./city_photos/budapest_photo2.jpg" />
                 <Card.Body style={{backgroundColor: "#1c1c1c"}}>
                    <Card.Text>
                     <Link to="#"class="bold">
@@ -55,7 +55,7 @@ function News() {
         </Col>
         <Col>
           <Card border="light" style={{margin:"30px 20px 10px 20px"}}>
-              <Card.Img variant="top" src="./dummy_picture.png" />
+              <Card.Img variant="top" src="./city_photos/budapest_photo2.jpg" />
                 <Card.Body style={{backgroundColor: "#1c1c1c"}}>
                    <Card.Text>
                    <Link to="#"class="bold">

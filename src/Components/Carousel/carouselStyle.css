@@ -8,8 +8,23 @@
 
   }
 .event-container{
-  height: 400px;
+  height: 460px;
   width: 800px;
   background-color: #1c1c1c;
   margin: 75px auto 0;
+  padding: 15px;
+}
+.eventImageStyle{
+  width: 100%;
+}
+.eventImageContainer{
+  overflow: hidden;
+  margin: auto;
+  width: 700px;
+  height: 300px;
+  background-color: white;
+  color:white;
+}
+h3, h6{
+  margin: 20px 10px 5px 10px;
 }
