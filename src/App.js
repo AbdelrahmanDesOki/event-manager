@@ -8,6 +8,7 @@ import DetailsPage from "./Components/DetailsPage/DetailsPage"
 import Pay from "./Components/paymentPage/paymentUi"
 import axios from 'axios';
 import MainPage from "./Components/MainPage";
+import DetailsPage2 from "./Components/DetailsPage2/EventPage2"
 
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
         <Route path="/auth" element={<Auth />} />
         <Route path="/pay" element={<Pay />} />
         <Route path="/elem" element={<DetailsPage />} />
+        <Route path="/elemm" element={<DetailsPage2 />} />
+
+
 
       </Routes>
 
