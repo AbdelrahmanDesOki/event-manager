@@ -6,6 +6,7 @@ import Auth from "./Components/Login/Auth"
 import Navbar from "./Components/Navbar/indexNav";
 import DetailsPage from "./Components/DetailsPage/DetailsPage"
 import Pay from "./Components/paymentPage/paymentUi"
+import ContactUs from "./contact/ContactUs"
 import axios from 'axios';
 import MainPage from "./Components/MainPage";
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/auth" element={<Auth />} />
         <Route path="/pay" element={<Pay />} />
         <Route path="/elem" element={<DetailsPage />} />
+        <Route path="/support" element ={<ContactUs/>}/>
 
       </Routes>
 
