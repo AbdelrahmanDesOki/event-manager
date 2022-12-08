@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
-import {Routes, Route, Link } from "react-router-dom"
+import {Routes, Route } from "react-router-dom"
 import Auth from "./Components/Login/Auth"
 import Navbar from "./Components/Navbar/indexNav";
 import axios from 'axios';
 import MainPage from "./Components/MainPage";
 import ContactUs from "./contact/ContactUs";
+import About from "./Components/about/About";
 
 function App() {
   const fetchapi = async () => {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<MainPage/>} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/support" element={<ContactUs/> } />
+          <Route path="/about" element={<About/> } />
         </Routes>
       </>
   )
