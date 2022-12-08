@@ -6,6 +6,7 @@ import Auth from "./Components/Login/Auth"
 import Navbar from "./Components/Navbar/indexNav";
 import axios from 'axios';
 import MainPage from "./Components/MainPage";
+import ContactUs from "./contact/ContactUs";
 
 function App() {
   const fetchapi = async () => {
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage/>} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/support" element={<ContactUs/> } />
         </Routes>
       </>
   )
