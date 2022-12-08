@@ -6,7 +6,7 @@ import Auth from "./Components/Login/Auth"
 import Navbar from "./Components/Navbar/indexNav";
 import axios from 'axios';
 import MainPage from "./Components/MainPage";
-import ContactUs from "./contact/ContactUs";
+import ContactUs from "./Components/contact/ContactUs";
 import About from "./Components/about/About";
 
 function App() {

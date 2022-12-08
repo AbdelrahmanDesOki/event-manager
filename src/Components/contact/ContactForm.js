@@ -23,6 +23,7 @@ const ContactForm = () => {
       toastId: 'notifyToast'
     });
   };
+
   // Function called on submit that uses emailjs to send email of valid contact form
   const onSubmit = async (data) => {
     // Destrcture data object
@@ -36,10 +37,10 @@ const ContactForm = () => {
       };
 
       await emailjs.send(
-        'service_a9d7xng',
-        'template_tbb0k9r',
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
-        's0ywDupjRqP7PsMvg'
+        process.env.REACT_APP_PUBLIC_KEY
       );
 
       reset();
