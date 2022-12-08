@@ -32,7 +32,7 @@ const Carousel = () => {
                   <Link to="/elem2" class="bold"> 
 
                     
-                    <h5 style={{fontSize:'30px'}}>Special Olympics World Games Berlin 2023</h5>
+                    <h3 style={{fontSize:'30px'}}>Special Olympics World Games Berlin 2023</h3>
                   </Link>
                   <div>
                     {/* <h6 style={{ textAlign: "center"}}>Event starts in</h6> */}
@@ -49,7 +49,7 @@ const Carousel = () => {
               </div>
               <div style={{display: "flex", flexDirection: "row" , justifyContent: "space-between"}}>
                   <Link to="/elem" class="bold"> 
-                  <h5 style={{fontSize:'30px'}}>SANTA CLAUS CUP 2022</h5>
+                  <h3 style={{fontSize:'30px'}}>SANTA CLAUS CUP 2022</h3>
                   </Link>
                   <div>
                     {/* <h6 style={{ textAlign: "center"}}>Event starts in</h6> */}
@@ -65,13 +65,14 @@ const Carousel = () => {
                 <img src="./city_photos/budapest-2018-hero.jpg" alt="event_photo" class="eventImageStyle"></img>
               </div>
               <div style={{display: "flex", flexDirection: "row" , justifyContent: "space-between"}}>
-<<<<<<< Updated upstream
-                  <Link to="#" class="bold"> 
-                    <h5 style={{fontSize:'30px'}}>ATP Challenger Tour - Hungarian Challenger Open 2022</h5>
-=======
+
+                  
+                    
+
                   <Link to="/elem2" class="bold"> 
-                    <h3>ATP Challenger Tour - Hungarian Challenger Open 2022</h3>
->>>>>>> Stashed changes
+                  <h3 style={{fontSize:'30px'}}>ATP Challenger Tour - Hungarian Challenger Open 2022</h3>
+                    {/* <h3>ATP Challenger Tour - Hungarian Challenger Open 2022</h3> */}
+
                   </Link>
                   <div>
                     {/* <h6 style={{ textAlign: "center"}}>Event starts in</h6> */}
