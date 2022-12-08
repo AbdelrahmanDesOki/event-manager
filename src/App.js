@@ -10,6 +10,7 @@ import ContactUs from "./Components/contact/ContactUs"
 import axios from 'axios';
 import MainPage from "./Components/MainPage";
 import DetailsPage2 from "./Components/DetailsPage2/EventPage2"
+import About from "./Components/about/About";
 
 
 function App() {
@@ -37,8 +38,9 @@ function App() {
         <Route path="/auth" element={<Auth />} />
         <Route path="/pay" element={<Pay />} />
         <Route path="/elem" element={<DetailsPage />} />
-        <Route path="/elemm" element={<DetailsPage2 />} />
-
+        <Route path="/elem2" element={<DetailsPage2 />} />
+        <Route path="/about" element={<About />} />
+        
         <Route path="/support" element={<ContactUs />} />
 
       </Routes>

@@ -29,13 +29,13 @@ const Carousel = () => {
                 <img src="./city_photos/budapest-2018-hero.jpg"  alt="event_photo" class="eventImageStyle"></img>
               </div>
               <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
-                  <Link to="/elem" class="bold"> 
+                  <Link to="/elem2" class="bold"> 
 
                     
-                    <h3>Special Olympics World Games Berlin 2023</h3>
+                    <h5 style={{fontSize:'30px'}}>Special Olympics World Games Berlin 2023</h5>
                   </Link>
                   <div>
-                    <h6 style={{ textAlign: "center"}}>Event starts in</h6>
+                    {/* <h6 style={{ textAlign: "center"}}>Event starts in</h6> */}
                     <CountdownTimer targetDate={dateTimeAfterThreeDays} />
                   </div>
               </div>
@@ -49,10 +49,10 @@ const Carousel = () => {
               </div>
               <div style={{display: "flex", flexDirection: "row" , justifyContent: "space-between"}}>
                   <Link to="/elem" class="bold"> 
-                  <h3>SANTA CLAUS CUP 2022</h3>
+                  <h5 style={{fontSize:'30px'}}>SANTA CLAUS CUP 2022</h5>
                   </Link>
                   <div>
-                    <h6 style={{ textAlign: "center"}}>Event starts in</h6>
+                    {/* <h6 style={{ textAlign: "center"}}>Event starts in</h6> */}
                     <CountdownTimer targetDate={dateTimeAfterThreeDays} />
                   </div>
               </div>
@@ -66,10 +66,10 @@ const Carousel = () => {
               </div>
               <div style={{display: "flex", flexDirection: "row" , justifyContent: "space-between"}}>
                   <Link to="#" class="bold"> 
-                    <h3>ATP Challenger Tour - Hungarian Challenger Open 2022</h3>
+                    <h5 style={{fontSize:'30px'}}>ATP Challenger Tour - Hungarian Challenger Open 2022</h5>
                   </Link>
                   <div>
-                    <h6 style={{ textAlign: "center"}}>Event starts in</h6>
+                    {/* <h6 style={{ textAlign: "center"}}>Event starts in</h6> */}
                     <CountdownTimer targetDate={dateTimeAfterThreeDays} />
                   </div>
               </div>
