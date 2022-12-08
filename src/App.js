@@ -1,33 +1,47 @@
-
-import React, { useEffect } from 'react';
-import 'src/App.css';
-import Navbar from './components/Navbar/indexNav';
-import{BrowserRouter as Router} from 'react-router-dom';
+import React, { useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./App.css"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Auth from "./Components/Login/Auth"
+import Navbar from "./Components/Navbar/indexNav";
+import DetailsPage from "./Components/DetailsPage/DetailsPage"
+import Pay from "./Components/paymentPage/paymentUi"
 import axios from 'axios';
-function App() {
+import MainPage from "./Components/MainPage";
 
-  const  fetchapi = async() => {
-    try{
- const res = await axios.get('http://localhost:3000/');
- console.log(res.data);
-    }catch(error){
-     console.log(error.message);
+
+function App() {
+  const fetchapi = async () => {
+    try {
+      const res = await axios.get('http://localhost:8000/api');
+      console.log(res.data);
+    } catch (error) {
+      console.log(error.message);
     }
   };
   useEffect(
     () => {
       fetchapi();
-    }, [] 
+    }, []
   );
-
-
   return (
-    <Router >
-      <Navbar/>
-    </Router>
-  );
+    <>
+      <header>
+        <Navbar />
+      </header>
+
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/pay" element={<Pay />} />
+        <Route path="/elem" element={<DetailsPage />} />
+
+      </Routes>
+
+    </>
+  )
 }
 
+export default App
 
 
-export default App;

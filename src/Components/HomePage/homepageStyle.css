@@ -1,0 +1,49 @@
+
+.bold {
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    background-color: transparent;
+}
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+}
+h2{
+    margin-bottom:1rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.muted{
+    opacity: .4;
+    font-size: 100%;
+    color: rgba(231, 234, 255, 0.95);
+}
+.font-size-sm {
+    font-size: 12px;
+    font-size: .75rem;
+}
+.col-sm-4{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-sm-8{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px){
+    .col-sm-4 {
+        width: 33.33333333%;
+    }
+}
