@@ -1,11 +1,11 @@
-#mapContainer {
+.MapContainer {
     width: 500px;
     height: 500px;
 }
 
 .margin-bottom-xs-16 {
-    margin-bottom: 16px!important;
-    margin-bottom: 1.06666667rem!important;
+    margin-bottom: 16px !important;
+    margin-bottom: 1.06666667rem !important;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
     overflow-y: scroll;
     background: #1c1c1c;
     font-size: 100%;
-    color: rgba(231,234,255,.9);
+    color: rgba(231, 234, 255, .9);
     line-height: 1.6;
 }
 
@@ -33,10 +33,14 @@ body {
     margin: 75px auto 0;
 }
 
-/* Inf{
-    color: rgba(231,234,255,.9);
-} */
+.list-group-item {
+    background-color: #1c1c1c;
+}
 
-.list-group-item{
+.icon-booking {
+    color: #1c1c1c;
+}
+
+.item {
     background-color: #1c1c1c;
 }
