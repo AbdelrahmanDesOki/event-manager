@@ -6,7 +6,7 @@ import Auth from "./Components/Login/Auth"
 import Navbar from "./Components/Navbar/indexNav";
 import DetailsPage from "./Components/DetailsPage/DetailsPage"
 import Pay from "./Components/paymentPage/paymentUi"
-import ContactUs from "./contact/ContactUs"
+import ContactUs from "./Components/contact/ContactUs"
 import axios from 'axios';
 import MainPage from "./Components/MainPage";
 import DetailsPage2 from "./Components/DetailsPage2/EventPage2"
