@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router } from 'react-router-dom'
 import { Component } from 'react';
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 
@@ -40,9 +41,9 @@ class MapContainer extends Component {
     this.state = {
       markers: [
         {
-          title: "20.000 HUF",
+          title: "90.000 HUF",
           name: "PRICE",
-          position: { lat: 47.5047, lng: 19.0960 }
+          position: { lat: 52.5200, lng: 13.4050 }
         }
       ]
     };
@@ -58,12 +59,12 @@ class MapContainer extends Component {
 
       </><Map
         google={this.props.google}
-        zoom={16}
+        zoom={18}
         style={{
           width: '650px',
           height: '400px'
         }}
-        initialCenter={{ lat: 47.5047, lng: 19.0960 }}
+        initialCenter={{ lat: 52.5200, lng: 13.4050 }}
       >{this.state.markers.map((marker, index) => (
         //marker
         <Marker
@@ -78,7 +79,6 @@ class MapContainer extends Component {
 
           {/*infoWindow*/}
           <InfoWindow
-
             marker={this.state.activeMarker}
             visible={this.state.showingInfoWindow}
           >
@@ -87,10 +87,9 @@ class MapContainer extends Component {
               <img src="https://logos-world.net/wp-content/uploads/2021/08/Booking-Logo-700x394.png" width="100px" height="100px"></img>
             </div>
             <li class="item"><a href="https://www.booking.com/" target="_blank">
-              <span class="icon-booking"></span> Booking.com
+              <span class="icon icon-booking"></span> Booking.com
             </a>
             </li>
-
             <li class="item"><a href="http://localhost:3000/pay" target="_blank">
               <span class="icon-payment"></span> Payment
             </a>
@@ -106,5 +105,5 @@ class MapContainer extends Component {
 
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyBGBhY4WHt1kGg8jm6_siyimpfOjsK06iY"
+  apiKey: "AIzaSyCTo1PSKe_KPHojYRIKSR4CnZf3SuwtclU"
 })(MapContainer);

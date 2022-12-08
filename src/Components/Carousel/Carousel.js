@@ -4,6 +4,7 @@ import '../Timer/timerStyles.css'
 import { Link } from 'react-router-dom'
 import CountdownTimer from '../Timer/CountdownTimer'
 
+
 const Carousel = () => {
   const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
   const NOW_IN_MS = new Date().getTime();
@@ -25,14 +26,16 @@ const Carousel = () => {
         style={{backgroundImage:"url(./city_photos/budapest_photo2.jpg"}}>
           <div class="event-container">
               <div class="eventImageContainer">
-                <img src="./budapest-2018-hero.jpg" alt="event_photo" class="eventImageStyle"></img>
+                <img src="./city_photos/budapest-2018-hero.jpg"  alt="event_photo" class="eventImageStyle"></img>
               </div>
-              <div style={{display: "flex", flexDirection: "row"}}>
-                  <Link to="" class="bold"> 
-                    <h3>ATP Challenger Tour - Hungarian Challenger Open 2022</h3>
+              <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
+                  <Link to="/elem2" class="bold"> 
+
+                    
+                    <h3 style={{fontSize:'30px'}}>Special Olympics World Games Berlin 2023</h3>
                   </Link>
                   <div>
-                    <h6 style={{ textAlign: "center"}}>Event starts in</h6>
+                    {/* <h6 style={{ textAlign: "center"}}>Event starts in</h6> */}
                     <CountdownTimer targetDate={dateTimeAfterThreeDays} />
                   </div>
               </div>
@@ -42,14 +45,14 @@ const Carousel = () => {
         style={{backgroundImage:"url(./city_photos/munich_photo.jpg)"}}>
           <div class="event-container">
               <div class="eventImageContainer">
-                <img src="./budapest-2018-hero.jpg" alt="event_photo" class="eventImageStyle"></img>
+                <img src="./city_photos/santa_claus.jpeg" alt="event_photo" class="eventImageStyle"></img>
               </div>
-              <div style={{display: "flex", flexDirection: "row"}}>
-                  <Link to="#" class="bold"> 
-                    <h3>ATP Challenger Tour - Hungarian Challenger Open 2022</h3>
+              <div style={{display: "flex", flexDirection: "row" , justifyContent: "space-between"}}>
+                  <Link to="/elem" class="bold"> 
+                  <h3 style={{fontSize:'30px'}}>SANTA CLAUS CUP 2022</h3>
                   </Link>
                   <div>
-                    <h6 style={{ textAlign: "center"}}>Event starts in</h6>
+                    {/* <h6 style={{ textAlign: "center"}}>Event starts in</h6> */}
                     <CountdownTimer targetDate={dateTimeAfterThreeDays} />
                   </div>
               </div>
@@ -59,14 +62,20 @@ const Carousel = () => {
         style={{backgroundImage:"url(./city_photos/paris_photo.jpg)"}}>
           <div class="event-container">
               <div class="eventImageContainer">
-                <img src="./budapest-2018-hero.jpg" alt="event_photo" class="eventImageStyle"></img>
+                <img src="./city_photos/budapest-2018-hero.jpg" alt="event_photo" class="eventImageStyle"></img>
               </div>
-              <div style={{display: "flex", flexDirection: "row"}}>
-                  <Link to="#" class="bold"> 
-                    <h3>ATP Challenger Tour - Hungarian Challenger Open 2022</h3>
+              <div style={{display: "flex", flexDirection: "row" , justifyContent: "space-between"}}>
+
+                  
+                    
+
+                  <Link to="/elem2" class="bold"> 
+                  <h3 style={{fontSize:'30px'}}>ATP Challenger Tour - Hungarian Challenger Open 2022</h3>
+                    {/* <h3>ATP Challenger Tour - Hungarian Challenger Open 2022</h3> */}
+
                   </Link>
                   <div>
-                    <h6 style={{ textAlign: "center"}}>Event starts in</h6>
+                    {/* <h6 style={{ textAlign: "center"}}>Event starts in</h6> */}
                     <CountdownTimer targetDate={dateTimeAfterThreeDays} />
                   </div>
               </div>
